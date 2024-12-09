@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e995d4c3-eedb-4dad-8631-33bfee22aab6" name="Changes" comment="" />
+    <list default="true" id="e995d4c3-eedb-4dad-8631-33bfee22aab6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/AdminUserMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/AdminUserMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/AttendanceAndCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/AttendanceAndCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/CommonFilePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/CommonFilePath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/FacultyAdder$AppendableObjectOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/FacultyAdder$AppendableObjectOutputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/FacultyAdder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/FacultyAdder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/FacultyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/FacultyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/Faculty_Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/Faculty_Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/Notification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/Notification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/PreviousGrade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/PreviousGrade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/SubAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/SubAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/SubUserController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/SubUserController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/SubUserController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/SubUserController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/SubUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/SubUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/oopUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/oopUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/demo/oppForgetPass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/demo/oppForgetPass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2pz8qZLI1lnbBZKQfzZ7N006upL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,13 +46,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/shesir/shesir/JavaProjects/_Student_Portal_"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="_Student_Portal_" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="_Student_Portal_" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
