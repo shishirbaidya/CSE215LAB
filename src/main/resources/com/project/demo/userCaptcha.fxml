@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F8F8FF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.AdminUserMenuController">
+    <children>
+      <ImageView fitHeight="726.0" fitWidth="1287.0" layoutX="-4.0" layoutY="-2.0">
+         <image>
+            <Image url="@../../../image/userc.png" />
+         </image>
+      </ImageView>
+        <AnchorPane layoutX="407.0" layoutY="96.0" prefHeight="560.0" prefWidth="523.0" style="-fx-background-color: white; -fx-background-radius: 30;" styleClass="shadowed-pane" stylesheets="@user1.css">
+            <children>
+                <Button layoutX="405.0" layoutY="503.0" mnemonicParsing="false" onAction="#methoduserLoginCaptcha" prefHeight="38.0" prefWidth="82.0" styleClass="shadowed-button" stylesheets="@user1.css" text="Verify" />
+                <Pane layoutX="20.0" layoutY="14.0" prefHeight="82.0" prefWidth="488.0" style="-fx-background-color: #3A9AD9; -fx-background-radius: 20;" styleClass="shadowed-pane">
+                    <children>
+                        <Text fill="WHITE" layoutX="22.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select all image with a" wrappingWidth="327.7366943359375">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="22.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car" wrappingWidth="76.10699462890625">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#fffefe" layoutX="22.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="click verify once there are none left" wrappingWidth="444.46331787109375">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="64.0" fitWidth="82.0" layoutX="371.0" layoutY="9.0">
+                            <image>
+                                <Image url="@../../../image/c01.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button layoutX="35.0" layoutY="122.0" mnemonicParsing="false" onAction="#methodeButton0" prefHeight="118.0" prefWidth="134.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="118.0" fitWidth="122.0">
+                            <image>
+                                <Image url="@../../../image/c1.jpg" />
+                            </image>
+                            <styleClass>
+                                <String fx:value="button" />
+                                <String fx:value="glow" />
+                            </styleClass>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="187.0" layoutY="121.0" mnemonicParsing="false" onAction="#methodeButton1" prefHeight="110.0" prefWidth="122.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="129.0">
+                            <image>
+                                <Image url="@../../../image/c2.jpg" />
+                            </image>
+                            <styleClass>
+                                <String fx:value="button" />
+                                <String fx:value="glow" />
+                            </styleClass>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="30.0" layoutY="252.0" mnemonicParsing="false" onAction="#methodeButton3" prefHeight="119.0" prefWidth="148.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="115.0" fitWidth="124.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c4.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="188.0" layoutY="254.0" mnemonicParsing="false" onAction="#methodeButton4" prefHeight="94.0" prefWidth="114.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="114.0" fitWidth="128.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c5.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="351.0" layoutY="254.0" mnemonicParsing="false" onAction="#methodeButton5" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="128.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c6.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="34.0" layoutY="376.0" mnemonicParsing="false" onAction="#methodeButton6" prefHeight="90.0" prefWidth="103.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="119.0" fitWidth="125.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c7.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="190.0" layoutY="379.0" mnemonicParsing="false" onAction="#methodeButton7" prefHeight="94.0" prefWidth="118.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="113.0" fitWidth="132.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c8.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="349.0" layoutY="380.0" mnemonicParsing="false" onAction="#methodeButton8" prefHeight="115.0" prefWidth="148.0" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="127.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c9.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="350.0" layoutY="122.0" mnemonicParsing="false" onAction="#methodeButton2" style="-fx-background-color: null;">
+                    <graphic>
+                        <ImageView fitHeight="117.0" fitWidth="130.0" styleClass="button">
+                            <image>
+                                <Image url="@../../../image/c3.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            <Button layoutX="20.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: null;">
+               <graphic>
+                      <ImageView fitHeight="38.0" fitWidth="134.0">
+                          <image>
+                              <Image url="@../../../image/c0.png" />
+                          </image>
+                      </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </AnchorPane>
+      <Label fx:id="wrongusercaptcha" layoutX="508.0" layoutY="61.0" prefHeight="26.0" prefWidth="242.0" text="You choose wrong try again .." textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.SubUserController">
+    <children>
+        <ImageView fitHeight="724.0" fitWidth="1286.0">
+            <image>
+                <Image url="@../../../image/bg.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="1050.0" layoutY="605.0" mnemonicParsing="false" onAction="#methodFacultyReview" prefHeight="46.0" prefWidth="170.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" stylesheets="@user1.css" text="Confirm">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Text layoutX="83.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About the instructor" wrappingWidth="280.53675842285156">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.The instructor was adequately prepared for the class." wrappingWidth="521.3367462158203">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.The instructor began and ended the class on time and used the class time effectively." wrappingWidth="750.1367645263672">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.The instructor’s teaching method was effective, and the sessions were clear and understandable." wrappingWidth="790.1366729736328">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.The instructor had good command over the subject matter of the course." wrappingWidth="741.3366851806641">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.The instructor was fair in grading exams, quizzes, assignments, and provided timely feedback." wrappingWidth="808.5367279052734">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.The instructor ensured fair exam conditions and strict proctoring." wrappingWidth="790.136672973633">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="83.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment:" wrappingWidth="140.08673095703125">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+        <TextField layoutX="83.0" layoutY="520.0" prefHeight="148.0" prefWidth="782.0" promptText="Enter your comment.Your identity will not be disclosed" style="-fx-background-radius: 20;" styleClass="shadowed-pane" stylesheets="@user1.css">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Text layoutX="525.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Evaluation" wrappingWidth="280.53675842285156">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+        <Text layoutX="932.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agree" wrappingWidth="50.13667297363281">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="1012.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Neutral" wrappingWidth="62.13671875">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="1102.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disagree" wrappingWidth="82.13671875">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <RadioButton layoutX="941.0" layoutY="161.0" mnemonicParsing="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="g1" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="1035.0" layoutY="161.0" mnemonicParsing="false" toggleGroup="$g1" />
+        <RadioButton layoutX="1127.0" layoutY="161.0" mnemonicParsing="false" toggleGroup="$g1" />
+        <RadioButton layoutX="941.0" layoutY="210.0" mnemonicParsing="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="g2" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="941.0" layoutY="272.0" mnemonicParsing="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="g3" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="941.0" layoutY="322.0" mnemonicParsing="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="g4" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="941.0" layoutY="372.0" mnemonicParsing="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="g5" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="941.0" layoutY="422.0" mnemonicParsing="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="g6" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="1035.0" layoutY="210.0" mnemonicParsing="false" toggleGroup="$g2" />
+        <RadioButton layoutX="1035.0" layoutY="272.0" mnemonicParsing="false" toggleGroup="$g3" />
+        <RadioButton layoutX="1035.0" layoutY="322.0" mnemonicParsing="false" toggleGroup="$g4" />
+        <RadioButton layoutX="1035.0" layoutY="372.0" mnemonicParsing="false" toggleGroup="$g5" />
+        <RadioButton layoutX="1035.0" layoutY="422.0" mnemonicParsing="false" toggleGroup="$g6" />
+        <RadioButton layoutX="1127.0" layoutY="210.0" mnemonicParsing="false" toggleGroup="$g2" />
+        <RadioButton layoutX="1127.0" layoutY="272.0" mnemonicParsing="false" toggleGroup="$g3" />
+        <RadioButton layoutX="1127.0" layoutY="322.0" mnemonicParsing="false" toggleGroup="$g4" />
+        <RadioButton layoutX="1127.0" layoutY="372.0" mnemonicParsing="false" toggleGroup="$g5" />
+        <RadioButton layoutX="1127.0" layoutY="422.0" mnemonicParsing="false" toggleGroup="$g6" />
+    </children>
+</AnchorPane>

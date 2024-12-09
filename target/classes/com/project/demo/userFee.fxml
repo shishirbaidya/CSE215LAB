@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #d0d3d4;" styleClass="shadowed-pane" stylesheets="@user1.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.SubUserController">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1288.0" layoutX="-1.0">
+            <image>
+                <Image url="@../../../image/bg.png" />
+            </image>
+        </ImageView>
+        <Pane layoutX="257.0" layoutY="97.0" prefHeight="608.0" prefWidth="1016.0" style="-fx-background-color: White;" styleClass="shadowed-pane" stylesheets="@user1.css">
+            <children>
+                <Text fill="#500a83" layoutX="368.0" layoutY="67.0" stroke="WHITE" strokeDashOffset="3.0" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="2.0" styleClass="shadowed-button" text="PAYMENT DETAILS" wrappingWidth="264.7366943359375">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+                <Label alignment="CENTER" layoutX="192.0" layoutY="404.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #d5dbdb;" text="TOTTAL FEE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+                <Label fx:id="settotalFee" alignment="CENTER" layoutX="331.0" layoutY="399.0" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="shadowed-pane" stylesheets="@user1.css" text="00.00$">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <SplitPane dividerPositions="0.9044444444444445" layoutX="518.0" layoutY="139.0" prefHeight="369.0" prefWidth="452.0" styleClass="shadowed-pane" stylesheets="@buttonBoarder.css">
+              <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="216.0" style="-fx-background-color: #fdfefe;">
+                     <children>
+                        <Text layoutX="19.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #bfc9ca;" text="Select a" wrappingWidth="63.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#300f5e" layoutX="88.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #85929e;" text="PAYMENT" wrappingWidth="72.0">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="167.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="method :" wrappingWidth="67.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="24.0" layoutY="37.0" mnemonicParsing="false" onAction="#visaPayment" prefHeight="58.0" prefWidth="317.0" style="-fx-background-color: WHITE;" styleClass="buttonBoarder" text="      Visa">
+                           <font>
+                              <Font name="Droid Sans Fallback" size="23.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="113.0" mnemonicParsing="false" onAction="#masterCardPayment" prefHeight="58.0" prefWidth="317.0" style="-fx-background-color: WHITE;" styleClass="buttonBoarder" text="               MasterCard">
+                           <font>
+                              <Font name="System Italic" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="24.0" layoutY="193.0" mnemonicParsing="false" onAction="#bikashPayment" prefHeight="58.0" prefWidth="317.0" style="-fx-background-color: WHITE;" styleClass="buttonBoarder" text="         Bikash">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Button>
+                        <ImageView disable="true" fitHeight="38.0" fitWidth="71.0" layoutX="50.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/Visa-Logo-2006.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView disable="true" fitHeight="38.0" fitWidth="56.0" layoutX="45.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/mastercard_PNG16.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView disable="true" fitHeight="38.0" fitWidth="79.0" layoutX="45.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/Bkash-logo-png.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <stylesheets>
+                        <URL value="@buttonBoarder.css" />
+                        <URL value="@buttonBoarder.css" />
+                     </stylesheets>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="519.0" style="-fx-background-color: #17202a;" stylesheets="@buttonBoarder.css">
+                     <children>
+                        <Text fill="#bfbfbf" layoutX="8.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Information :">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;&gt;" wrappingWidth="26.0">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="100.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- Please try to pay on time." wrappingWidth="206.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="96.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- You can pay from online or from avaiable banks" wrappingWidth="193.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="96.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- Late payment will add 200 Taka per day" wrappingWidth="214.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <AnchorPane layoutX="26.0" layoutY="195.0" prefHeight="182.0" prefWidth="442.0" stylesheets="@buttonBoarder.css">
+               <styleClass>
+                  <String fx:value="buttonBoarder" />
+                  <String fx:value="shadowed-pane" />
+               </styleClass>
+               <children>
+                  <Separator layoutX="12.0" layoutY="36.0" prefHeight="3.0" prefWidth="419.0" style="-fx-background-color: black;" />
+                  <Label fx:id="COURSE1" layoutX="14.0" layoutY="50.0" prefHeight="28.0" prefWidth="98.0" text="COURSE1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="COURSE2" layoutX="14.0" layoutY="96.0" prefHeight="28.0" prefWidth="98.0" text="COURSE2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="COURSE3" layoutX="14.0" layoutY="144.0" prefHeight="28.0" prefWidth="90.0" text="COURSE3">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Fee1" layoutX="335.0" layoutY="56.0" prefHeight="28.0" prefWidth="79.0" text="00.00$" textFill="#238f22" />
+                  <Label fx:id="Fee3" layoutX="335.0" layoutY="144.0" prefHeight="28.0" prefWidth="72.0" text="00.00$" textFill="#029e31" />
+                  <Label fx:id="Fee2" layoutX="335.0" layoutY="96.0" prefHeight="28.0" prefWidth="79.0" text="00.00$" textFill="#028d00" />
+                  <Separator layoutX="12.0" layoutY="83.0" prefHeight="1.0" prefWidth="419.0" style="-fx-background-color: Black;" />
+                  <Separator layoutX="12.0" layoutY="131.0" prefHeight="3.0" prefWidth="419.0" style="-fx-background-color: black;" />
+                  <Text fill="#480051" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Course" wrappingWidth="98.0" />
+                  <Text fill="#500754" layoutX="335.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee" wrappingWidth="56.0" />
+                  <Label layoutX="185.0" layoutY="56.0" text="3.00">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="185.0" layoutY="102.0" text="3.00">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="185.0" layoutY="150.0" text="3.00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#3d0443" layoutX="185.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit" />
+               </children>
+            </AnchorPane>
+            <Text fill="#3e0d51" layoutX="30.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course details :" wrappingWidth="141.0">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="30.0" layoutY="398.0" mnemonicParsing="false" onAction="#showTotalFee" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: GREEN;" styleClass="shadowed-button" stylesheets="@buttonBoarder.css" text="\$ Show Fee" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Separator layoutX="40.0" layoutY="82.0" prefHeight="3.0" prefWidth="921.0" style="-fx-background-color: Purple;" />
+            </children>
+        </Pane>
+        <Pane layoutX="161.0" layoutY="9.0" prefHeight="51.0" prefWidth="1114.0" style="-fx-background-color: #566573; -fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+            <children>
+                <TitledPane expanded="false" layoutX="923.0" layoutY="14.0" prefHeight="214.0" prefWidth="187.0" styleClass="accordion" stylesheets="@user1.css">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: null; -fx-background-radius: 30;">
+                            <children>
+                                <Button fx:id="setting" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#methodSettings" prefHeight="38.0" prefWidth="134.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css" text="Settings">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="feedback" layoutX="21.0" layoutY="64.0" mnemonicParsing="false" onAction="#methodFeedback" prefHeight="44.0" prefWidth="134.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" text="Report/Feedback" />
+                                <Button fx:id="logout" layoutX="21.0" layoutY="119.0" mnemonicParsing="false" onAction="#methodLogout" prefHeight="38.0" prefWidth="135.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" text="Logout" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <graphic>
+                        <Label fx:id="idlabel" prefHeight="17.0" prefWidth="120.0" text="2400000" textFill="#101010">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <Text fill="#101010" strokeType="OUTSIDE" strokeWidth="0.0" text="  ID :" wrappingWidth="32.5367431640625">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                            </graphic>
+                        </Label>
+                    </graphic>
+                </TitledPane>
+                <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="911.0" layoutY="6.0" styleClass="button">
+                    <image>
+                        <Image url="@../../../image/profile.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="864.0" layoutY="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #566573;">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" onDragDetected="#methodNotification">
+                            <image>
+                                <Image url="@../../../image/notification.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+            <ImageView fitHeight="36.0" fitWidth="72.0" layoutX="96.0" layoutY="7.0">
+               <image>
+                  <Image url="@../../../image/money.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="193.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment" wrappingWidth="90.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            </children></Pane>
+        <Pane layoutX="10.0" layoutY="9.0" prefHeight="696.0" prefWidth="206.0" style="-fx-background-color: #212f3d; -fx-background-radius: 30;" styleClass="shadowed-pane" stylesheets="@user1.css">
+            <children>
+                <Text fill="#f7f7f7" layoutX="11.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NORTH SOUTH UNIVERSITY" wrappingWidth="186.93670654296875">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Text fill="#e1e1e1" layoutX="16.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Excellence in Higher Education" wrappingWidth="187.0">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="200.0" fitWidth="166.0" layoutX="21.0" layoutY="37.0">
+                    <image>
+                        <Image url="@../../../image/NSU.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="Profile" layoutX="22.0" layoutY="326.0" mnemonicParsing="false" onAction="#methodProfile" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" stylesheets="@user1.css" text="Profile">
+                    <styleClass>
+                        <String fx:value="shadowed-pane" />
+                        <String fx:value="shadowed-button" />
+                        <String fx:value="button" />
+                    </styleClass></Button>
+                <Button fx:id="courseSelect" layoutX="22.0" layoutY="377.0" mnemonicParsing="false" onAction="#methodCourseSelect" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" stylesheets="@user1.css" text="Advising" />
+                <Button fx:id="CGPA" layoutX="22.0" layoutY="428.0" mnemonicParsing="false" onAction="#methodCGPA" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Grade" />
+                <Button fx:id="Fee" layoutX="23.0" layoutY="480.0" mnemonicParsing="false" onAction="#methodFee" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Payement" />
+                <Button fx:id="attendance" layoutX="22.0" layoutY="532.0" mnemonicParsing="false" onAction="#methodAttendance" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Attendance" />
+                <Button fx:id="facultyReview" layoutX="22.0" layoutY="584.0" mnemonicParsing="false" onAction="#methodFacultyReview" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Faculty Evalution" />
+                <Button fx:id="courseDetails" layoutX="22.0" layoutY="637.0" mnemonicParsing="false" onAction="#methodCourseDetails" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Curriculum" />
+                <Line endX="63.80000305175781" layoutX="117.0" layoutY="309.0" startX="-92.19999694824219" stroke="#c9c3c3" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

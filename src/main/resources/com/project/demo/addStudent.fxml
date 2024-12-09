@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.SubAdminController">
+   <children>
+      <AnchorPane layoutX="183.0" prefHeight="89.0" prefWidth="1137.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css">
+         <children>
+            <Label layoutX="18.0" layoutY="12.0" prefHeight="35.0" prefWidth="168.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="42.0" prefHeight="29.0" prefWidth="141.0" stylesheets="@hover.css" text="Student/Register" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="3.0" prefHeight="736.0" prefWidth="176.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="112.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/NSU.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="148.0" prefHeight="35.0" prefWidth="168.0" text="NorthSouth University" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="157.0" prefHeight="38.0" prefWidth="168.0" text="Center of Excellence in Higer Education" textFill="WHITE">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="172.0" prefHeight="23.0" prefWidth="141.0" text="First Private University in Bangladesh" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif" size="8.0" />
+               </font>
+            </Label>
+            <Button layoutX="24.0" layoutY="619.0" mnemonicParsing="false" onAction="#methodLogout" prefHeight="24.0" prefWidth="112.0" text="Logout">
+               <styleClass>
+                  <String fx:value="rounded-anchor-pane" />
+                  <String fx:value="neon-button" />
+               </styleClass>
+            </Button>
+            <Button layoutX="22.0" layoutY="551.0" mnemonicParsing="false" onAction="#methodDasbord" prefHeight="42.0" prefWidth="112.0" stylesheets="@hover.css" text="Home">
+               <styleClass>
+                  <String fx:value="neon-button" />
+                  <String fx:value="rounded-anchor-pane" />
+               </styleClass>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="197.0" layoutY="99.0" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css" text="  Student Name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="148.0" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css" text=" Student ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="254.0" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css" text=" Department" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="200.0" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css" text=" Semester" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="studentName" layoutX="392.0" layoutY="102.0" prefHeight="38.0" prefWidth="269.0" promptText="NAME" stylesheets="@hover.css">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="studentid" layoutX="392.0" layoutY="150.0" prefHeight="38.0" prefWidth="269.0" promptText="ID" styleClass="neon-button" />
+      <TextField fx:id="initialSemester" layoutX="392.0" layoutY="203.0" prefHeight="38.0" prefWidth="269.0" promptText="CURRENT SEMESTER" />
+      <TextField fx:id="studentDepartment" layoutX="392.0" layoutY="257.0" prefHeight="38.0" prefWidth="269.0" promptText="DEPARTMENT" />
+      <Button fx:id="confirmS" layoutX="1056.0" layoutY="639.0" mnemonicParsing="false" onAction="#confirmSTdetails" prefHeight="38.0" prefWidth="124.0" style="-fx-background-color: #000000;" stylesheets="@hover.css" text="Confirm" textFill="WHITE">
+         <styleClass>
+            <String fx:value="neon-button" />
+            <String fx:value="rounded-anchor-pane" />
+         </styleClass></Button>
+      <Label layoutX="197.0" layoutY="319.0" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css" text="  Gender" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="femaleGender" layoutX="537.0" layoutY="319.0" mnemonicParsing="false" onAction="#getGender" prefHeight="35.0" prefWidth="124.0" stylesheets="@hover.css" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="getGender" />
+         </toggleGroup>
+         <styleClass>
+            <String fx:value="neon-button" />
+            <String fx:value="rounded-anchor-pane" />
+         </styleClass>
+      </RadioButton>
+      <RadioButton fx:id="maleGender" layoutX="399.0" layoutY="319.0" mnemonicParsing="false" onAction="#getGender" prefHeight="43.0" prefWidth="112.0" stylesheets="@hover.css" text="Male" toggleGroup="$getGender">
+         <styleClass>
+            <String fx:value="neon-button" />
+            <String fx:value="rounded-anchor-pane" />
+         </styleClass></RadioButton>
+      <Label fx:id="studentgender" layoutX="694.0" layoutY="322.0" prefHeight="38.0" prefWidth="141.0" stylesheets="@hover.css" textFill="#003597" />
+   </children>
+</AnchorPane>

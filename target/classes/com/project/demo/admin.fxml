@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F8F8FF;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.AdminUserMenuController">
+   <children>
+      <Text fill="#081459" layoutX="640.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMINISTRATOR LOGIN" wrappingWidth="438.3791046142577">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="269.0" fitWidth="227.0" layoutX="113.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/NSU.png" />
+         </image>
+      </ImageView>
+      <Line endX="284.4073486328125" endY="66.6292953491211" layoutX="398.0" layoutY="299.0" rotate="-90.0" startX="-116.0206298828125" startY="66.18899536132812" stroke="#0e3899" />
+      <ImageView fitHeight="99.0" fitWidth="60.0" layoutX="1186.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/new1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="113.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="North South University" wrappingWidth="255.7367706298828">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#03072e" layoutX="71.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center of Excellence in Higher Education" wrappingWidth="338.1367645263672">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="autextField" layoutX="590.0" layoutY="254.0" prefHeight="51.0" prefWidth="488.0" promptText="Email or Username" style="-fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="590.0" layoutY="353.0" prefHeight="51.0" prefWidth="488.0" promptText="Password" style="-fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="adminLogin" alignment="CENTER" layoutX="590.0" layoutY="472.0" mnemonicParsing="false" onAction="#methodAdminLogin" prefHeight="46.0" prefWidth="196.0" style="-fx-background-color: #6495ED; -fx-background-radius: 20;" styleClass="shadowed-button" stylesheets="@user1.css" text="LOGIN" textFill="#031440">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="adminForgotPassword" alignment="TOP_LEFT" layoutX="584.0" layoutY="418.0" mnemonicParsing="false" onAction="#methodAdminForgotPassword" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" stylesheets="@user1.css" text="Forgot Password ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="adminPasswordInvalid" layoutX="600.0" layoutY="325.0" prefHeight="21.0" prefWidth="240.0" textFill="RED" />
+      <Label fx:id="adminEmailInvalid" layoutX="594.0" layoutY="227.0" prefHeight="21.0" prefWidth="240.0" textFill="RED" />
+      <TextField fx:id="visiblePasswordField" layoutX="591.0" layoutY="354.0" prefHeight="51.0" prefWidth="488.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="1010.0" layoutY="359.0" mnemonicParsing="false" onAction="#togglePasswordVisibility" style="-fx-background-color: null;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="41.0">
+               <image>
+                  <Image url="@../../../image/eye.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

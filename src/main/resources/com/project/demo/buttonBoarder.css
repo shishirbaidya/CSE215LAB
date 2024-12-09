@@ -1,0 +1,5 @@
+.buttonBoarder {
+    -fx-border-color: #300f5e;
+    -fx-border-width: 2;
+    -fx-border-radius: 3;
+}
