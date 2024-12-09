@@ -1,9 +1,9 @@
 
-# RDS Student Portal Management System
+# RDS Student Portal 
 
 ## 📚 Project Overview
 
-The **RDS Student Portal ** is a  JavaFX-based desktop application designed to streamline the management of student records, academic information, and administrative processes. This is a lab project that id done my me @Shishir Baidya|24137** and @MD. Konok-Uz-Zaman|24121**
+The **RDS Student Portal ** is a  JavaFX-based desktop application designed to streamline the management of student records, academic information, and administrative processes. This is cse215 lab project that is done by me #Shishir Baidya |24137** AND #MD. KONOK-UZ-ZAMAN |24121**
 
 ---
 
@@ -42,4 +42,4 @@ The **RDS Student Portal ** is a  JavaFX-based desktop application designed to s
 - **Build Tool:** Maven
 
 ---
-###Second semester project of -----Norhth South University
+##Second semester project of -----Norhth South University
