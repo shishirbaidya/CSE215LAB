@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #d0d3d4;" styleClass="shadowed-pane" stylesheets="@user1.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.SubUserController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1288.0" layoutX="-1.0">
+         <image>
+            <Image url="@../../../image/bg.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="725.0" layoutY="82.0" prefHeight="622.0" prefWidth="546.0" style="-fx-background-color: #fdfefe; -fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <children>
+            <Text fill="#2c2fa1" layoutX="169.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Information" wrappingWidth="241.79998779296872">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Status: Enrolled" wrappingWidth="336.39990234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major1           : N/A " wrappingWidth="223.99999999999994">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major2           : N/A" wrappingWidth="224.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Probation       :" wrappingWidth="147.73663330078125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minor             :" wrappingWidth="147.73663330078125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CGPA             :" wrappingWidth="147.73663330078125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="showCGPA" layoutX="196.0" layoutY="265.0" prefHeight="30.0" prefWidth="103.0" text="N/A">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="185.0" prefHeight="30.0" prefWidth="85.0" text="N/A">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="161.0" layoutY="9.0" prefHeight="51.0" prefWidth="1114.0" style="-fx-background-color: #566573; -fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <children>
+            <TitledPane expanded="false" layoutX="923.0" layoutY="14.0" prefHeight="214.0" prefWidth="187.0" styleClass="accordion" stylesheets="@user1.css">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: null; -fx-background-radius: 30;">
+                     <children>
+                        <Button fx:id="setting" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#methodSettings" prefHeight="38.0" prefWidth="134.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css" text="Settings">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="feedback" layoutX="21.0" layoutY="64.0" mnemonicParsing="false" onAction="#methodFeedback" prefHeight="44.0" prefWidth="134.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" text="Report/Feedback" />
+                        <Button fx:id="logout" layoutX="21.0" layoutY="119.0" mnemonicParsing="false" onAction="#methodLogout" prefHeight="38.0" prefWidth="135.0" style="-fx-background-radius: 15;" styleClass="shadowed-pane" text="Logout" />
+                     </children>
+                  </AnchorPane>
+              </content>
+               <graphic>
+                  <Label fx:id="idlabel" prefHeight="17.0" prefWidth="120.0" text="2400000" textFill="#101010">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <Text fill="#101010" strokeType="OUTSIDE" strokeWidth="0.0" text="  ID :" wrappingWidth="32.5367431640625">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </TitledPane>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="911.0" layoutY="6.0" styleClass="button">
+               <image>
+                  <Image url="@../../../image/profile.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="864.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleLoadButtonClick" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #566573;">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="31.0" onDragDetected="#handleLoadButtonClick">
+                     <image>
+                        <Image url="@../../../image/notification.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="55.0" layoutY="4.0">
+               <image>
+                  <Image url="@../../../image/Home.png" />
+               </image>
+            </ImageView>
+            <Text fill="#100f0f" layoutX="132.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile" wrappingWidth="85.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane layoutX="10.0" layoutY="9.0" prefHeight="696.0" prefWidth="206.0" style="-fx-background-color: #212f3d; -fx-background-radius: 30;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <children>
+            <Text fill="#f7f7f7" layoutX="11.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NORTH SOUTH UNIVERSITY" wrappingWidth="186.93670654296875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#e1e1e1" layoutX="11.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Excellence in Higher Education" wrappingWidth="187.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="200.0" fitWidth="166.0" layoutX="21.0" layoutY="37.0">
+               <image>
+                  <Image url="@../../../image/NSU.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Profile" layoutX="22.0" layoutY="326.0" mnemonicParsing="false" onAction="#methodProfile" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" stylesheets="@user1.css" text="Profile">
+               <styleClass>
+                  <String fx:value="shadowed-pane" />
+                  <String fx:value="shadowed-button" />
+                  <String fx:value="button" />
+               </styleClass></Button>
+            <Button fx:id="courseSelect" layoutX="22.0" layoutY="377.0" mnemonicParsing="false" onAction="#methodCourseSelect" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" stylesheets="@user1.css" text="Advising" />
+            <Button fx:id="CGPA" layoutX="22.0" layoutY="428.0" mnemonicParsing="false" onAction="#methodCGPA" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Grade" />
+            <Button fx:id="Fee" layoutX="23.0" layoutY="480.0" mnemonicParsing="false" onAction="#methodFee" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Payement" />
+            <Button fx:id="attendance" layoutX="22.0" layoutY="532.0" mnemonicParsing="false" onAction="#methodAttendance" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Attendance" />
+            <Button fx:id="facultyReview" layoutX="22.0" layoutY="584.0" mnemonicParsing="false" onAction="#methodFacultyReview" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Faculty Evalution" />
+            <Button fx:id="courseDetails" layoutX="22.0" layoutY="637.0" mnemonicParsing="false" onAction="#methodCourseDetails" prefHeight="33.0" prefWidth="159.0" style="-fx-background-radius: 30;" styleClass="shadowed-button" text="Curriculum" />
+            <Line endX="63.80000305175781" layoutX="117.0" layoutY="309.0" startX="-92.19999694824219" stroke="#c9c3c3" />
+         </children>
+      </Pane>
+      <Pane layoutX="231.0" layoutY="82.0" prefHeight="621.0" prefWidth="474.0" style="-fx-background-color: #fdfefe; -fx-background-radius: 15;" styleClass="shadowed-pane" stylesheets="@user1.css">
+         <children>
+            <Pane layoutX="13.0" layoutY="319.0" prefHeight="278.0" prefWidth="449.0" style="-fx-background-color: #d6eaf8; -fx-background-radius: 30;">
+               <children>
+                  <Text layoutX="30.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID  :       " wrappingWidth="176.73663330078125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enrolled In  :" wrappingWidth="131.73675537109375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry date   :" wrappingWidth="131.73675537109375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester    :" wrappingWidth="131.73675537109375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="139.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" General Info" wrappingWidth="131.73675537109375">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="studentID" layoutX="174.0" layoutY="54.0" prefHeight="30.0" prefWidth="224.0" text="Label">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="enrolledIN" layoutX="174.0" layoutY="103.0" prefHeight="30.0" prefWidth="224.0" text="Label">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="entryItem" layoutX="174.0" layoutY="152.0" prefHeight="30.0" prefWidth="224.0" text="Label">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Semester" layoutX="174.0" layoutY="199.0" prefHeight="30.0" prefWidth="224.0" text="Label">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="studentName" alignment="CENTER" layoutX="91.0" layoutY="268.0" prefHeight="30.0" prefWidth="289.0" text="Name" textFill="#020003">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageView1" fitHeight="220.0" fitWidth="216.0" layoutX="97.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.demo.SubAdminController">
+   <children>
+      <TextField fx:id="messageTextField" layoutX="227.0" layoutY="267.0" prefHeight="95.0" prefWidth="583.0" />
+      <Pane prefHeight="720.0" prefWidth="208.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane" stylesheets="@hover.css">
+         <children>
+            <Button layoutX="49.0" layoutY="573.0" mnemonicParsing="false" onAction="#methodLogout" prefHeight="42.0" prefWidth="112.0" stylesheets="@hover.css" text="logout">
+               <styleClass>
+                  <String fx:value="neon-button" />
+                  <String fx:value="rounded-anchor-pane" />
+               </styleClass></Button>
+            <Button layoutX="49.0" layoutY="510.0" mnemonicParsing="false" onAction="#methodDasbord" prefHeight="42.0" prefWidth="112.0" text="Home">
+               <styleClass>
+                  <String fx:value="neon-button" />
+                  <String fx:value="rounded-anchor-pane" />
+               </styleClass></Button>
+            <ImageView fitHeight="165.0" fitWidth="151.0" layoutX="29.0" layoutY="24.0">
+               <image>
+                  <Image url="@../../../image/NSU.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="202.0" prefHeight="34.0" prefWidth="169.0" text="NorthSouth University" textFill="#d7d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="7.0" layoutY="223.0" prefHeight="26.0" prefWidth="194.0" text="Center of Excellence in Higer Education" textFill="#f4eeee">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="240.0" prefHeight="18.0" prefWidth="187.0" text="First Private University in Bangladesh" textFill="#d7cccc">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="212.0" prefHeight="82.0" prefWidth="1067.0" style="-fx-background-color: #34495e;" styleClass="rounded-anchor-pane">
+         <stylesheets>
+            <URL value="@user1.css" />
+            <URL value="@hover.css" />
+         </stylesheets>
+         <children>
+            <Label layoutX="39.0" layoutY="26.0" prefHeight="18.0" prefWidth="194.0" text="Notification" textFill="#c7bbbb">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="707.0" layoutY="386.0" mnemonicParsing="false" onAction="#saveNotifications" prefHeight="42.0" prefWidth="112.0" styleClass="neon-button" stylesheets="@hover.css" text="confirm" />
+      <Label layoutX="227.0" layoutY="226.0" prefHeight="26.0" prefWidth="176.0" text="Add Message">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Text layoutX="227.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Evalution Status:" wrappingWidth="251.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="feStatusTrue" layoutX="466.0" layoutY="429.0" mnemonicParsing="false" text="yes">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="g1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="feStatusFalse" layoutX="537.0" layoutY="429.0" mnemonicParsing="false" text="no" toggleGroup="$g1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
