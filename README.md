@@ -26,17 +26,5 @@ The **RDS Student Portal** is a  JavaFX-based desktop application designed to st
 
 - **Authentication**
   - Role-based login (Student, Faculty, Admin).
-
-- **Modern UI/UX**
-  - Responsive and user-friendly design using JavaFX components.
-
 ---
-
-## Tools :
-
-- **Frontend:** JavaFX
-- **Backend:** Java
-- **Build Tool:** Maven
-
----
-## Second semester project in "Norhth South University"
+## Second semester project in "North South University"
